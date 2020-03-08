@@ -27,16 +27,12 @@
 		<!--导航-->
 	    <nav class="navbar navbar-default">
 		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header" margin-left=60px>
-		     <a class="navbar-brand" href="#">Brand</a>
-		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li><a href="#">Link </a></li>
-		        <li><a href="#">Link</a></li>
+		        <li><a href="#">Relational Algebra</a></li>
+		        <li><a href="#">SQL</a></li>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Databases <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
@@ -73,6 +69,13 @@
 		}
 		</style>
 
+		<style type="text/css">
+		.mymargin{
+		 margin-left:15px;
+		 margin-right:15px;
+		}
+		</style>
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2">
@@ -86,6 +89,40 @@
 				</div>
 				<div class="col-md-1 v-divider"></div>
 				<div class="col-md-9">
+					<div class="btn-group btn-group-justified" role="group" aria-label="...">
+						<div class="btn-group" role="group">
+					    	<button type="button" class="btn btn-default disabled" onclick="input()">Operations</button>
+					  	</div>
+					    <div class="btn-group" role="group">
+					    	<button type="button" class="btn btn-default" onclick="input()">π</button>
+					  	</div>
+					  	<div class="btn-group" role="group">
+					    	<button type="button" class="btn btn-default" onclick="input()">ρ</button>
+					  	</div>
+					 	<div class="btn-group" role="group">
+					    	<button type="button" class="btn btn-default" onclick="input()">σ</button>
+					  	</div>
+					  	<div class="btn-group" role="group">
+					    	<button type="button" class="btn btn-default" onclick="input()">⨝</button>
+					  	</div>
+					  	<div class="btn-group" role="group">
+					    	<button type="button" class="btn btn-default" onclick="input()">∧</button>
+					  	</div>
+					  	<div class="btn-group" role="group">
+					    	<button type="button" class="btn btn-default" onclick="input()">∨</button>
+					  	</div>
+					</div>
+
+					<script>
+						function input(){
+							var x=document.createElement("input");
+							x.setAttribute("type","text");
+							x.setAttribute("value","text()");
+							document.body.appendChild(x);
+						}
+					</script>
+
+
 					Enter your query:
 					 <textarea class="form-control" rows="7"></textarea>
 					 <button type="submit" class="btn btn-default">Enter</button>
